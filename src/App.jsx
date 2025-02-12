@@ -1,10 +1,14 @@
-import UpdateName from './Action'
-import './App.css'
+import ChangeName from './Action'
+import Optimistic from './Optimistic'
 
 function App() {
   return (
     <>
-     <UpdateName />
+      <div style={{border : "2px solid black" , padding : "10px" , borderRadius : "10px"}}>
+        <ChangeName />
+        <hr/>
+        <Optimistic/>
+      </div>
     </>
   )
 }
