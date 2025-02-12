@@ -39,7 +39,7 @@ function Thread ({messages ,  sendMessage}) {
             {optimisticMessages.map((message, index) => (
                 <div key={index}>
                     {message.text}
-                    {!message.text && <small>Name is required</small>}
+                    {!message.text && <small style={{ color: "red" }}>Name is required</small>}
                     {!!message.sending && message.text && <small> (Sending...)</small>}
                 </div>
             ))}
